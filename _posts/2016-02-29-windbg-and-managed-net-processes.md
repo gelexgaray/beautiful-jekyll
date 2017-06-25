@@ -190,6 +190,7 @@ HistClear
 ```
 
 ##SOSEX
+
 [SOSEX](http://www.stevestechspot.com/SOSEXANewDebuggingExtensionForManagedCode.aspx) is an extension library from Steve's Techspot. It is not from Microsoft but it is really nice. Some functionality is overlapped with PSSCOR and SOS, but it has some nice utilities not present in neither of the other libraries. It's a must have if you can install extra libraries.
 
 ```

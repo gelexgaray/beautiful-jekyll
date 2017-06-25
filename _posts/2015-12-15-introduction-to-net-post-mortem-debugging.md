@@ -107,7 +107,7 @@ Microsoft DebugDiag installation creates two program shortcuts:
 
 When you start DebugDiag Analysis, you will see a screen like this:
 
-![DebugDiag Analysis rule selection](/images/2015-12-15.1/DebugDiagAnalysis.jpg)
+![DebugDiag Analysis rule selection](/img/2015-12-15.1/DebugDiagAnalysis.jpg)
 
 Now, it’s very easy to run a simple analysis. Simply tell DebugDiag which issue type would you like to analyze, select one or more memory dumps, and let it do the hard job.
 
