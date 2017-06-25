@@ -106,8 +106,9 @@ If you work at a company like mine, probably it will very hard to get the mscord
 The only issue with this extension is that it has to be downloaded from Microsoft and put on the WinDbg extension search path. The easiest way to deploy this extension is to copy it on the WinDbg folder.
 
 <blockquote>
-The unique difference between PSSCOR2 and PSSCOR4 is the target .Net framework. You should use PSSCOR2 for applications running on frameworks 2.x and 3.x. PSSCOR4 should be used on higher versions of the .Net framework.  
-<\blockquote>
+The unique difference between PSSCOR2 and PSSCOR4 is the target .Net framework. You should use PSSCOR2 for applications running on frameworks 2.x and 3.x. PSSCOR4 should be used on higher versions of the .Net framework. 
+</blockquote>
+
 
 ```
 0:000> .load psscor2
