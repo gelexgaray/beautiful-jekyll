@@ -3,7 +3,7 @@ layout: post
 title: "WinDbg and managed .NET processes"
 date: 2016-03-21
 comments: true
-categories: ["WinDbg", ".net", "post-mortem" ]
+tags: ["WinDbg", ".net", "post-mortem" ]
 ---
 Ok, so you are a managed code developer and somebody told you WinDbg is an unmanaged code debugger... Well, in fact, it is, but there are plenty of extensions that make possible debugging managed processes. 
 <!-- More -->

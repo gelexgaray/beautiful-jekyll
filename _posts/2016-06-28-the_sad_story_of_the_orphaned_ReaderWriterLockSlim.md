@@ -3,7 +3,7 @@ layout: post
 title: "The sad story of the orphaned ReaderWriterLockSlim"
 date: 2016-07-19 14:16:31 +0200
 comments: true
-categories: ["WinDbg", "real case", "post-mortem", ".net internals"]
+tags: ["WinDbg", "real case", "post-mortem", ".net internals"]
 ---
 Another day in the operations arena. Everything was working correctly, and performance counters had great values. CPU usage was near 0%... system idle. Suddenly a phone call and an angry voice from the other side. What??? The system seems down???
 

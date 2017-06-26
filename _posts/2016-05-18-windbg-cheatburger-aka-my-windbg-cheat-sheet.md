@@ -2,7 +2,7 @@
 layout: post
 title: "WinDBG CheatBurger (aka My WinDBG cheat sheet)"
 date: 2016-05-26 
-categories: ["WinDbg"]
+tags: ["WinDbg"]
 comments: true
 published: true
 ---

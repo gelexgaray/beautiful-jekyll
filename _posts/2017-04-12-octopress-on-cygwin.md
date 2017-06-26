@@ -3,7 +3,7 @@ layout: post
 title: "Octopress 2.0 on cygwin"
 date: 2017-04-12 19:29:24 +0200
 comments: true
-categories: ["octopress", "misc"]
+tags: ["octopress", "misc"]
 ---
 
 Today I got working Octopress 2.0 on a Cygwin environment. I'm going to share some hacks needed to make it work.

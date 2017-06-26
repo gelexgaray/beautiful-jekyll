@@ -3,7 +3,7 @@ layout: post
 title: "First steps with WinDbg"
 date: 2016-02-23
 comments: true
-categories: ["WinDbg"]
+tags: ["WinDbg"]
 ---
 WinDbg is the Microsoft's "de-facto" standard for kernel-mode debugging. It sounds like a hacking tool, or something restricted to gurus... but it can be really useful for "mainstream developers" like you and me. It can be used to debug user-mode code, it has capabilities to debug .NET processes, and best of all: it's free (as in "free beer").
 <!-- More -->

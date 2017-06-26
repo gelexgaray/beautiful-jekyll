@@ -3,7 +3,7 @@ layout: post
 title: "Personal Mobile Git Server"
 date: 2017-01-10 00:22:13 +0100
 comments: true
-categories: ["misc", "hacking"]
+tags: ["misc", "hacking"]
 ---
 Why should I need a git server on my mobile phone? Well... first of all, because it is fun. Then, if you think about it again, we spend a lot of time writing lines "not so important" to put into whatever your source code server is, but quite important to track.
 

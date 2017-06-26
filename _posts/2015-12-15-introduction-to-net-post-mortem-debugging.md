@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to .net post-mortem debugging"
 date: 2016-01-07
 comments: true
-categories: ["post-mortem", "debugdiag", ".net"]
+tags: ["post-mortem", "debugdiag", ".net"]
 ---
 
 There are lots of good practices to follow during software development. You can make, defensive programming, unit tests, load tests, manual testing, follow good design practices, follow agile methodologies… but whatever you do, the software will fail unexpectedly in the production environment.

@@ -3,7 +3,7 @@ layout: post
 title: "Inspecting DataTables with WinDbg"
 date: 2016-06-07 
 comments: true
-categories: ["WinDbg", "trick"]
+tags: ["WinDbg", "trick"]
 published: true 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "The mysterious case of the Deadlock"
 date: 2016-05-06
-categories: ["WinDbg", ".net", "post-mortem", "real case" ]
+tags: ["WinDbg", ".net", "post-mortem", "real case" ]
 comments: true
 published: true
 ---
