@@ -4,6 +4,7 @@ title: "WCF, MSMQ and messages disordered on sending"
 date: 2999-06-26 00:00:00 +0200
 comments: true
 tags: ["WCF", ".net"]
+published: false
 ---
 If you have worked with transactional MSMQ, there is something probably you have heard a lot of times: Messages sent from computer A to computer B are always delivered in the same order they were sent.
 
