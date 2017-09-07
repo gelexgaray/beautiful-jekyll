@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "WCF, MSMQ and messages disordered on sending"
-date: 2999-06-26 00:00:00 +0200
+date: 2017-09-07 14:24:00 +0200
 comments: true
 tags: ["WCF", ".net"]
-published: false
+published: true
 ---
 If you have worked with transactional MSMQ, there is something probably you have heard a lot of times: Messages sent from computer A to computer B are always delivered in the same order they were sent.
 
@@ -16,31 +16,27 @@ If you have played a little with WCF and MetMSMQ endpoints, this shouldn't be un
 Messages are read in order, but whenever this throttling goes beyond 1, they are processed using lots of threads. In this parallel processing mode, threads can be disordered while running. Nothing new till here.
 
 ## Messages disordered on sending
-The bogus thing comes when you use a throttling of 1, and produce and consume messages on the same machine. Probably you thought, like me, 
+The bogus thing comes when you use a throttling of 1, and produce and consume messages on the same machine using a single thread. Probably you thought, like me, that messages should be processed in order... but that's what it really happens. In WCF, messages are sent in an **asynchronous way by default**... and this is where the disorder comes into place.
 
-<!-- 
-1. Enviamos mensajes locales de una máquina a sí misma, por una cola con un throttling de 1 y con 1 hilo procesando.
-2. Los mensajes son transaccionales
-3. Asumíamos que llegarían y se procesarían en orden. Sin embargo se desordenan
-4. Ocurre porque por defecto, el envío de mensajes es asíncrono
-5. Behaviour de cliente cambia éste comportamiento: 
+There is a behaviour to change this:
 
+'''
 <system.serviceModel>
-	<behaviors>
-	  <endpointBehaviors>
-        <behavior name="Client Behavior">
-          <synchronousReceive />
-          <transactedBatching maxBatchSize="1" />
-        </behavior>
-      </endpointBehaviors>
-	</behaviors>
-
-	<client>
-      <endpoint address="net.msmq://localhost/private/DestinationQueue"
-        behaviorConfiguration="Client Behavior"
-        binding="netMsmqBinding" bindingConfiguration="netMsmqBindingConfig"
-        contract="ProxyClass" name="EndpointName">
-     </endpoint>
-	</client>
+  <behaviors>
+    <endpointBehaviors>
+      <behavior name="Client Behavior">
+        <synchronousReceive />
+        <transactedBatching maxBatchSize="1" />
+      </behavior>
+    </endpointBehaviors>
+  </behaviors>
+  <client>
+    <endpoint address="net.msmq://localhost/private/DestinationQueue" behaviorConfiguration="Client Behavior" binding="netMsmqBinding" bindingConfiguration="netMsmqBindingConfig" contract="ProxyClass" name="EndpointName" />
+  </client>
 </system.serviceModel>
--->
+'''
+
+* **transactedBatching**: This behaviour controls the asynchronous batch size used for sending operations. By using a batch size of 1, all messages will be sent synchronously
+
+OK, so... that's all, folks!
+See you on the next post!
