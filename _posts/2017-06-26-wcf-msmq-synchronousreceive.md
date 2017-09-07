@@ -10,7 +10,7 @@ If you have worked with transactional MSMQ, there is something probably you have
 
 Well... this is not totally true: sometimes this messages can be unexpectedly disordered. Don´t loose your faith... it is totally normal, at least if WCF is playing its role in this scenario.
 
-## Messages disordered on read
+## Messages disordered on receiving
 If you have played a little with WCF and MetMSMQ endpoints, this should be known for you: There is a behaviour called Throttling that controls how many parallel threads are going to process your messages. 
 
 Messages are read in order, but whenever this throttling goes beyond 1, they are processed using lots of threads. In this parallel processing mode, threads can be disordered while running. Nothing new till here.
@@ -46,7 +46,7 @@ When transactedBatching is set to a batch size greater than 1, everything you en
 ```
 
 ### More on this topic
-(https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/batching-messages-in-a-transaction)
+<https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/batching-messages-in-a-transaction>
 
 ## That's all, folks!
 See you in the next post!
