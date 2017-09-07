@@ -29,7 +29,7 @@ There is a behaviour to change this:
 
 When transactedBatching is set to a batch size greater than 1, everything you enqueue will go to a buffer, and this buffer will be committed to a thread pool whenever it is full or there is a "silent time" of 20% of the total transaction duration in this sending process. Here is where the dissordering comes into place.
 
-'''
+```
 <system.serviceModel>
   <behaviors>
     <endpointBehaviors>
@@ -43,7 +43,7 @@ When transactedBatching is set to a batch size greater than 1, everything you en
     <endpoint address="net.msmq://localhost/private/DestinationQueue" behaviorConfiguration="Client Behavior" binding="netMsmqBinding" bindingConfiguration="netMsmqBindingConfig" contract="ProxyClass" name="EndpointName" />
   </client>
 </system.serviceModel>
-'''
+```
 
 ### More on this topic
 https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/batching-messages-in-a-transaction
