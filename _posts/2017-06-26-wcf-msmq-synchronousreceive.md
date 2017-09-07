@@ -20,7 +20,7 @@ The bogus thing comes when you use a throttling of 1, and produce and consume me
 
 Why?
 
-### Asyncronous by defaul 
+### Asyncronous by default 
 This is due to the asyncronous nature of WCF message sending. Let me explain: in WCF, messages are sent in an **asynchronous way by default**... and this is where the disorder comes into place.
 
 There is a behaviour to change this:
@@ -46,7 +46,7 @@ When transactedBatching is set to a batch size greater than 1, everything you en
 ```
 
 ### More on this topic
-https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/batching-messages-in-a-transaction
+(https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/batching-messages-in-a-transaction)
 
 ## That's all, folks!
 See you in the next post!
