@@ -28,3 +28,5 @@ You are ready to make your first "Hello world" flow on your fresh node-red serve
 
 TODO: Make a simple flow
 TODO: Protect your repo
+TODO: Install plgins
+TODO: Database
