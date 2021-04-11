@@ -14,7 +14,7 @@ Oh, oh, oh!... but the power is back. I feel the geekness traversing my blood to
 
 Well... why not?
 
-Heroku gives you 550 hours of free computing per month. Node-red gives you a powerful way to connect things.
+[Heroku](https://www.heroku.com) gives you 550 hours of free computing per month. [Node-red](https://nodered.org) gives you a powerful way to connect things.
 There are great rule based systems to automate things out there: Power Automate or IFTTT, for example.
 Why them complicating my life? Well, IFTTT and Power Automate both have quite poor free plans, and none of them seem as powerful as node-red.
 
