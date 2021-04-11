@@ -20,9 +20,9 @@ Why them complicating my life? Well, IFTTT and Power Automate both have quite po
 
 ## Fork node-red-heroku to have your own backup of your infrastructure.
 
-First of all, we will fork [node-red-heroku](https://github.com/joeartsea/node-red-heroku) on github.
+First of all, we will fork [node-red-heroku](https://github.com/joeartsea/node-red-heroku) on Github.
 Ok, this is really not necessary... but it will help if we plan to add new nodes to our node-red and redeploy the thing. This repo will contain the backup of our infrastructure, being this infrastructure defined on code.
-You could also swallow copy the repo and make it private, but forking it gives you the power to change, while you mantain an easy way to update your code base from the upstream repo.
+You could also swallow copy the repo and make it private, but forking it gives you the power to change, while you maintain an easy way to update your code base from the upstream repo.
 
 ## Change deployment button
 
@@ -34,20 +34,20 @@ Ok, we have our fork, so let's change readme.md to update the Deploy button with
 
 ## Deploy to Heroku
 
-Now go to your new on github using a browser and press the Deploy button. A new app on heroku will be created!
-As part of the deployment process, a new postgress database will be created on heroku and connected to the webapp... here will be stored your data.
+Now go to your new repo on Github using a browser and press the Deploy button. A new app on Heroku will be created!
+As part of the deployment process, a new Postgress database will be created on Heroku and connected to the webapp... here will be stored your data.
 
-### Point your browser to your brand new heroku app
+### Point your browser to your brand new Heroku app
 
 ```
 http://YOUR-NODE-RED.herokuapp.com
 ```
 
-With the first login, you will have to create the admin user. Remember to use a secure password and don't store it on a posit on your screen 🤭
+With the first login, you will have to create the admin user. Remember to use a secure password and don't store it on a posit beside your screen 🤭
 
 > Remember
 > - Your git repo hosts the infrastructure as code
-> - Your postgress DB on heroku is where your data and flows will reside
+> - Your Postgress DB on Heroku is where your data and flows will reside
 
 ## Install plugins
 
@@ -76,7 +76,7 @@ I use Twitter and Telegram connectors, so I will edit package.json in the root f
 
 ## Redeploy the thing
 
-We could press again the deploy button, but it is a smarter way: we could bind permanently our heroku app to our github repo to easily redeploy from heroku.
+We could press again the deploy button, but there is a smarter way: we could bind permanently our Heroku app to our Github repo to easily redeploy from Heroku.
 
 ### Bind Heroku to Github
 
@@ -86,13 +86,13 @@ On Heroku, go to your application's admin page and:
 - Find the *Deployment method* option
 - Select *Github*
 
-Authenticate on github, and select the repo and branch to be deployed.
+Authenticate on Github, and select the repo and branch to be deployed.
 
-## Deploy, deploy, depoy!
+## Deploy, deploy, deploy!
 
 Now, you will have two options
 - Deploy on demand, pressing the Deploy button on Heroku
 - Setup an automatic deployment, to deploy on Heroku every time the source branch is changed
 
-# Bye, by now...
+# Bye-bye, by now...
 And here we arrive to the finish of our recipe. Happy coding on your shiny new node-red!
