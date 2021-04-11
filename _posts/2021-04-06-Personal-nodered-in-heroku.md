@@ -6,11 +6,13 @@ comments: true
 tags: ["Hack", "node-red", "serverless", "heroku"]
 publish: true
 ---
-# Why?
-
-Well... why not? I've not been happily hacking since long time ago.
+I've not been happily hacking since long time ago.
 I've been controlled by my agilist alter ego... like if Hulk was asleep by a long dose of Prozac.
 Oh, oh, oh!... but the power is back. I feel the geekness traversing my blood torrent.
+
+# Why do I need my own cloud hosted Node-red?
+
+Well... why not?
 
 Heroku gives you 550 hours of free computing per month. Node-red gives you a powerful way to connect things.
 There are great rule based systems to automate things out there: Power Automate or IFTTT, for example.
