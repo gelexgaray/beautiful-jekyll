@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Personal node-red server in Heroku"
-date: 2021-05-31 00:00:00 +0200
+date: 2021-04-11 00:00:00 +0200
 comments: true
 tags: ["Hack", "node-red", "serverless", "heroku"]
 publish: true
